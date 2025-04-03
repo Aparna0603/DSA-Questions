@@ -1,0 +1,15 @@
+class Solution {
+public long findMinDiff(int[] a, int n, int m) {
+n = a.length;
+if(n==0) {
+return 0;
+}
+long res = long.MAX_VALUE;
+for(int i=0; i<n-m+1; i++) {
+int minElement = a[i];
+int maxElement = a[i+m-1];
+res = Math.max(res,maxElement-minElement);
+}
+return res;
+}
+}
