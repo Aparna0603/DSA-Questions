@@ -1,5 +1,5 @@
 class Solution {
-public int removeConsecutive(String s) {
+public String removeConsecutive(String s) {
 int n = s.length();
 if(s==null||s.isEmpty()) return s;
 StringBuilder result = new StringBuilder();
