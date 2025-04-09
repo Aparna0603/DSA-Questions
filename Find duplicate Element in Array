@@ -1,0 +1,18 @@
+import java.util.*;
+class Solution {
+    public static int duplicateElement(int [] nums) {
+        int n = nums.length;
+        Arrays.sort(nums);
+        for(int i=1; i<n; i++) {
+            if(nums[i]==nums[i-1]) {
+                return nums[i];
+            }
+        }
+        return -1;
+        
+    }
+    public static void main(String args[]) {
+       int nums[] = {2,3,4,5,3,1};
+       System.out.println(duplicateElement(nums));
+    }
+}
