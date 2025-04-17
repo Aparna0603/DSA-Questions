@@ -1,0 +1,12 @@
+class Main {
+public String longestWord(String s) {
+String[] words = s.splits(" ");
+String largest = "";
+for(String word: words) {
+if(word.length()>longest.length()) {
+largest = word;
+}
+}
+return largest;
+}
+}
