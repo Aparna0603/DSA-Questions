@@ -1,0 +1,21 @@
+class Solution {
+public String capitalizeFirstAndLast(String str) {
+String words[] = str.split(" ");
+StringBuilder result = new StringBuilder();
+for(String word:words) {
+int len = word.length();
+if(len==1) {
+result.append(word.charAt(0))+" ";
+}
+else if(len>1) {
+String first = Character.toUpperCase(word.charAt(0))+" ";
+String middle = word.substring(1,len-1);
+String last = Character.toUpperCase(word.charAt(len-1))+" ";
+
+result.append(first).append(middle),append(last);
+}
+result.append(" ");
+}
+result.toString().trim();
+}
+}
