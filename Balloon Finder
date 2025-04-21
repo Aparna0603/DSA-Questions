@@ -1,0 +1,14 @@
+class BalloonFinder {
+public static String findBallon(int N, String[] B) {
+Map<String,Integer> countMap = new LinkedHashMap<>();
+for(String color: B) {
+countMap.put(color,countMap.getOrDefault(color,0) + 1);
+}
+for(String color:B) {
+if(countMap.get(color) % 2!=0) {
+return color;
+}
+}
+return "All are even";
+}
+}
