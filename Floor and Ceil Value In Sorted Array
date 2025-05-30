@@ -1,0 +1,20 @@
+class Solution {
+public int[] getFloorAndCeil(int [] nums, int target) {
+int result[] = new int[2];
+int n = nums.length;
+int max = Integer.MIN_VALUE;
+int min = Integer.MAX_VALUE;
+for(int i=0; i<n; i++) {
+if(nums[i]<=x) {
+max = Math.max(max,nums[i]);
+}
+if(nums[i]>=x) {
+min = Math.min(min,nums[i]);
+}
+}
+result[0] = (max==Integer.MIN_VALUE) ? -1:max;
+result[1] = (min==Integer.MAX_VALUE) ? -1:min;
+
+return result;
+}
+}
