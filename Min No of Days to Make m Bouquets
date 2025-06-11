@@ -1,0 +1,36 @@
+class Solution {
+public boolean isPossible(int [] bloomDays, int days, int m, int k) {
+int count = 0, mob =0;
+for(int i=0; i<bloomDays.length; i++) {
+if(bloomDays[i]<=days) {
+count++;
+}
+else {
+nob+=(count/k);
+count = 0;
+}
+nob+=(count/k);
+if(nob>=m) {
+return true;
+}
+else {
+return false;
+}
+}
+public int minDyas(int [] bloomDays, int m, int k) {
+if((long)m*k>bloomDays.length) {
+return -1;
+}
+int low = 1, int high = 1e9;
+while(low<high) {
+int mid = low+(high-low)/2;
+if(isPossible(bloomDays,mid,m,k) {
+high = mid;
+}
+else {
+low  = mid+1;
+}
+}
+return low;
+}
+}
