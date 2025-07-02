@@ -1,5 +1,5 @@
 public class Solution {
-public int lengthCycle(ListNode node) {
+public int lengthCycle(ListNode head) {
 ListNode fast = head;
 LitNode slow = head;
 while(fast!=null && fast.next!=null) {
