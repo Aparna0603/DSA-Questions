@@ -14,3 +14,12 @@ return true;
 return false;
 }
 }
+private int findSquare(int number) {
+int ans = 0;
+while(number>0) {
+rem = number%10;
+ans += rem*rem;
+number /=10'
+}
+return ans;
+}
