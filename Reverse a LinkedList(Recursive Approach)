@@ -1,0 +1,12 @@
+public class Solution{
+public void reverse(ListNode node) {
+if(node==tail) {
+head = tail;
+return;
+}
+reverse(node.next);
+tail.next = node;
+tail = node;
+tail.next = null;
+}
+}
